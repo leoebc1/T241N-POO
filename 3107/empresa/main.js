@@ -1,0 +1,14 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var junior_1 = require("./junior");
+var pleno_1 = require("./pleno");
+var senior_1 = require("./senior");
+var empresaDev_1 = require("./empresaDev");
+var empresa = new empresaDev_1.EmpresaDev;
+var juniorNovo = new junior_1.Junior;
+var plenoNovo = new pleno_1.Pleno;
+var seniorNovo = new senior_1.Senior;
+empresa.adicionarFuncionario(juniorNovo);
+empresa.adicionarFuncionario(plenoNovo);
+empresa.adicionarFuncionario(seniorNovo);
+empresa.empresar();
